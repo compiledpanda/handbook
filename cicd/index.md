@@ -5,7 +5,7 @@ status: draft
 * Always squash merge w/ commit message pulled from the PR title
     * Use https://www.conventionalcommits.org/
     * `<type>[optional scope][!]: <description>` (i.e. `fix(PROJ-1234)!: breaking fix that ...`
-    * The set of types should be agreed upon and encoded in the linter
+    * The set of types and scopes should be agreed upon and encoded in the linter
     * Scope should consistently be the ticket number if an external ticketing system is used (i.e. Jira)
     * Use `!` for breaking changes
     * Body should be additional info that adds context (why) to the change

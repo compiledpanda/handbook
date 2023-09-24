@@ -33,8 +33,8 @@ On Merge To Main:
     * Tag with latest and version
 * Deploy Non-Prod
 * Test Non-Prod
-* Deploy Prod
-* Test Prod
+* Deploy Prod (if Continuously Deployed)
+* Test Prod (if Continuously Deployed)
 
 On Manual Deploy
 * Check Build

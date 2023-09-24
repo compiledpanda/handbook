@@ -21,6 +21,8 @@ Branch off of main, create feature PR, squash merge back into main.
 
 Why not semver? When deploying code that backs a web app and/or API, the actual version information is for reference or internal use only. There is no information within semver that the using party needs to know. The API contract itself handles versioning, and a web app does not gain anything by using semver over a release notes page. And what does a sever minor version bump even mean in a web app? Based on this it typically isn't worth the rigamorole of trying to do wemver, especially if you are continuiously deploying when changes hit master. It just adds complexity to the SDLC process (calculating/setting/tracking/incrementing the version) for the App/API without any major advantages.
 
+![API On PR](./img/api-on-pr.png)
+
 On PR:
 * Checkout Code (branch)
 * Lint Code
@@ -30,6 +32,8 @@ On PR:
     * Description contains required items
 * Ready to Merge
     * Depends on all other jobs, and cannot merge unless this passes
+
+![API On Merge To Main](./img/api-on-merge.png)
 
 On Merge To Main:
 * Checkout Code (main)
@@ -42,6 +46,8 @@ On Merge To Main:
 * Test Non-Prod
 * Deploy Prod (if Continuously Deployed)
 * Test Prod (if Continuously Deployed)
+
+![API On Manual Deploy](./img/api-on-manual.png)
 
 On Manual Deploy
 * Checkout Code (main)

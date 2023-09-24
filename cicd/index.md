@@ -1,6 +1,14 @@
 ---
 status: draft
 ---
+# General
+* Use https://www.conventionalcommits.org/
+* Always squash merge w/ commit message pulled from the PR title
+* Use a single main branch and protect that branch
+    * Require PR to merge
+    * Require reviews (optionally from code owners)
+    * No force pushes (even from administrators)
+
 # Web App or API
 A single main branch representing production.
 
@@ -12,7 +20,7 @@ On PR:
 * Lint Code
 * Test Code
 * Lint PR
-    * Title matches syntax
+    * Title matches conventional commit syntax
     * Description contains required items
 * Ready to Merge
     * Depends on all other jobs, and cannot merge unless this passes
@@ -36,13 +44,37 @@ On Manual Deploy
 * Test (Non-Prod | Prod)
 
 # Library or Long-Lived Releases
+Use https://semver.org/
+
+On PR:
+* Lint Code
+* Test Code
+* Lint PR
+    * Title matches conventional commit syntax
+    * Description contains required items
+* Ready to Merge
+    * Depends on all other jobs, and cannot merge unless this passes
+
+On Merge To Main:
+* Test Code
+* Auto Release (Optional)
+    * Calculate new release based on Conventional Commits since last tag
+
+On Release Tag
+* Build Code
+    * Version is pulled from tag
+* Test Build
+* Publish Build
+    * Tag with version
+* Deploy (Optional)
+
 
 # Infrastructure
 On PR:
 * Lint Changes
 * Plan Changes
 * Lint PR
-    * Title matches syntax
+    * Title matches conventional commit syntax
     * Description contains required items
 * Ready to Merge
     * Depends on all other jobs, and cannot merge unless this passes

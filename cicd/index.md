@@ -24,14 +24,18 @@ Why not semver? When deploying code that backs a web app and/or API, the actual 
 ![API On PR](./img/api-on-pr.png)
 
 On PR:
-* Checkout Code (branch)
+* Checkout Code
+    * Checkout branch under PR
 * Lint Code
+    * Lint code and fail when linter fails
 * Test Code
+   * Execute whichever tests build enough confidence to merge and deploy
+   * Evaluate test coverage and fail if coverage is below desired levels
 * Lint PR
-    * Title matches conventional commit syntax
-    * Description contains required items
+    * Lint PR Title and fail if it does not match conventional commit syntax
+    * (Optionally) Evaluate the PR Description and fail if it does not contain required items
 * Ready to Merge
-    * Depends on all other jobs, and cannot merge unless this passes
+    * Only passes if all other jobs pass. This is used to simplify branch protection so there is a single job required to pass before a PR is merged
 
 ![API On Merge To Main](./img/api-on-merge.png)
 

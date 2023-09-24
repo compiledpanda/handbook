@@ -40,12 +40,14 @@ On PR:
 ![API On Merge To Main](./img/api-on-merge.png)
 
 On Merge To Main:
-* Checkout Code (main)
+* Checkout Code
+    * Checkout main branch
 * Build Code
     * Version is git hash w/ optional date
 * Test Build
 * Push Build
     * Tag with latest and version
+    * (Optional) Push latest OpenAPI spec or other documentation
 * Deploy Non-Prod
 * Test Non-Prod
 * Deploy Prod (if Continuously Deployed)

@@ -15,7 +15,7 @@ status: draft
     * No force pushes (even from administrators)
 
 # Web App or API
-The typical development flow for a Web App or API is to create short-lived feature branches, create and validate new functionality, and then deploy those changes out to production. Because versioning from a consumer perspective is usually inherent in the app or API itself, there is no need to provide strict versioning or long lived versions for these types of projects. As such the focus is on simplicity and speed, with the ability to understand what is deployed where at any given time.
+The typical development flow for a Web App or API is to create short-lived feature branches, create and validate new functionality, and then deploy those changes out to production. Because versioning from a consumer perspective is usually inherent in the app or API itself, there is usually no need to provide strict versioning or long lived versions for these types of projects. As such the focus is on simplicity and speed, with the ability to understand what is deployed where at any given time.
 
 ### On PR
 ![API On PR](./img/api-on-pr.png)

@@ -15,15 +15,10 @@ status: draft
     * No force pushes (even from administrators)
 
 # Web App or API
-A single main branch representing production.
+The typical development flow for a Web App or API is to create short-lived feature branches, create and validate new functionality, and then deploy those changes out to production. Because versioning from a consumer perspective is usually inherent in the app or API itself, there is no need to provide strict versioning or long lived versions for these types of projects. As such the focus is on simplicity and speed, with the ability to understand what is deployed where at any given time.
 
-Branch off of main, create feature PR, squash merge back into main.
-
-Why not semver? When deploying code that backs a web app and/or API, the actual version information is for reference or internal use only. There is no information within semver that the using party needs to know. The API contract itself handles versioning, and a web app does not gain anything by using semver over a release notes page. And what does a sever minor version bump even mean in a web app? Based on this it typically isn't worth the rigamorole of trying to do wemver, especially if you are continuiously deploying when changes hit master. It just adds complexity to the SDLC process (calculating/setting/tracking/incrementing the version) for the App/API without any major advantages.
-
+### On PR
 ![API On PR](./img/api-on-pr.png)
-
-On PR:
 * Checkout Code
     * Checkout branch under PR
 * Lint Code
@@ -39,9 +34,8 @@ On PR:
 * Ready to Merge
     * Only passes if all other jobs pass. This is used to simplify branch protection so there is a single job required to pass before a PR is merged
 
+### On Merge To Main
 ![API On Merge To Main](./img/api-on-merge.png)
-
-On Merge To Main:
 * Checkout Code
     * Checkout main branch
 * Build Code
@@ -55,15 +49,17 @@ On Merge To Main:
 * Deploy Prod (if Continuously Deployed)
 * Test Prod (if Continuously Deployed)
 
+### On Manual Deploy
 ![API On Manual Deploy](./img/api-on-manual.png)
-
-On Manual Deploy
 * Checkout Code (main)
 * Check Build
     * Validate inputs (hash, env)
     * Ensure build was tagged/pushed
 * Deploy (Non-Prod | Prod)
 * Test (Non-Prod | Prod)
+
+### Why not semver?
+When deploying code that backs a web app and/or API, the actual version information is for reference or internal use only. There is no information within semver that the using party needs to know. The API contract itself handles versioning, and a web app does not gain anything by using semver over a release notes page. And what does a sever minor version bump even mean in a web app? Based on this it typically isn't worth the rigamorole of trying to do wemver, especially if you are continuiously deploying when changes hit master. It just adds complexity to the SDLC process (calculating/setting/tracking/incrementing the version) for the App/API without any major advantages.
 
 # Library or Long-Lived Releases
 Use https://semver.org/

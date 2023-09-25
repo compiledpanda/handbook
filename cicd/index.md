@@ -31,6 +31,8 @@ On PR:
 * Test Code
    * Execute whichever tests build enough confidence to merge and deploy
    * Evaluate test coverage and fail if coverage is below desired levels
+* Scan Code
+   * Scan code for security issues and fail if severe issues are found
 * Lint PR
     * Lint PR Title and fail if it does not match conventional commit syntax
     * (Optionally) Evaluate the PR Description and fail if it does not contain required items

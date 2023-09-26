@@ -87,6 +87,26 @@ When deploying code that backs a web app and/or API, the actual version informat
     * Execute smoke tests and/or e2e test suite and notify/rollback/fail if tests fail
     * (Optional) Post results to internal chat/email system
 
+# Infrastructure
+On PR:
+* Checkout Code (branch)
+* Lint Changes
+* Plan Changes
+* Lint PR
+    * Title matches conventional commit syntax
+    * Description contains required items
+* Ready to Merge
+    * Depends on all other jobs, and cannot merge unless this passes
+
+On Merge To Main:
+* Checkout Code (main)
+* Plan Change
+* Hold Non-Prod (Optional)
+* Apply Non-Prod
+* Hold Prod (Recommended)
+* Apply Prod
+
+
 # Library or Long-Lived Releases
 Use https://semver.org/
 
@@ -123,22 +143,3 @@ On Manual Release
     * Update Change Log
     * Commit changes
     * Git Tag with version
-
-# Infrastructure
-On PR:
-* Checkout Code (branch)
-* Lint Changes
-* Plan Changes
-* Lint PR
-    * Title matches conventional commit syntax
-    * Description contains required items
-* Ready to Merge
-    * Depends on all other jobs, and cannot merge unless this passes
-
-On Merge To Main:
-* Checkout Code (main)
-* Plan Change
-* Hold Non-Prod (Optional)
-* Apply Non-Prod
-* Hold Prod (Recommended)
-* Apply Prod

@@ -87,6 +87,7 @@ The following workflows provide a basic CI/CD system for Web Apps and APIs.
     * (Optional) Post results to internal chat/email system
 * Test (Non-Prod | Prod)
     * Execute smoke tests and/or e2e test suite and notify/rollback/fail if tests fail
+    * (Optional) Execute security scans (DAST) and notify/rollback/fail if scans fail
     * (Optional) Post results to internal chat/email system
 
 ### On CRON

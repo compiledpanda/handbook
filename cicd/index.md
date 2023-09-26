@@ -21,6 +21,7 @@ The typical development flow for a Web App or API is to create short-lived featu
 When deploying code that backs a web app and/or API, the actual version information is for reference or internal use only. There is no information within semver that the using party needs to know. The API contract itself handles versioning, and a web app does not gain anything by using semver over a release notes page. And what does a sever minor version bump even mean in a web app? Based on this it typically isn't worth the rigamorole of trying to do wemver, especially if you are continuiously deploying when changes hit master. It just adds complexity to the SDLC process (calculating/setting/tracking/incrementing the version) for the App/API without any major advantages. As such, use either the git has of the commit directly (`a5ad1258...`, either first 7 chars or the entire hash) since it provides the ability to know the exact code deployed by referencing git (the source of truth), or a combination of the git hash and build date (`2023-01-01-a5ad1258...`) to allow DevSecOps to easily see the build date and to also get a reference to the exact code.
 
 ## Workflows
+The following workflows provide a basic CI/CD system for Web Apps and APIs.
 
 ### On PR
 ![API On PR](./img/api-on-pr.png)
@@ -28,18 +29,18 @@ When deploying code that backs a web app and/or API, the actual version informat
     * Checkout branch under PR
 * Lint Code
     * Lint code and fail when linter fails
-    * (Optional) update PR with lint results
+    * (Optional) Update PR with lint results
 * Test Code
    * Execute whichever tests build enough confidence to merge and deploy
    * Evaluate test coverage and fail if coverage is below desired levels
-   * (Optional) update PR with test results
+   * (Optional) Update PR with test results
 * Scan Code
-   * Scan code for security issues and fail if severe issues are found
-   * (Optional) update PR with scan results
+   * Scan code for security issues (SAST) and fail if severe issues are found
+   * (Optional) Update PR with scan results
 * Lint PR
     * Lint PR Title and fail if it does not match conventional commit syntax
     * (Optional) Evaluate the PR Description and fail if it does not contain required items
-    * (Optional) update PR with results
+    * (Optional) Update PR with results
 * Ready to Merge
     * Only passes if all other jobs pass. This is used to simplify branch protection so there is a single job required to pass before a PR is merged
     * (Optional) Post results to internal chat/email system
@@ -63,6 +64,7 @@ When deploying code that backs a web app and/or API, the actual version informat
     * (Optional) Post results to internal chat/email system
 * Test Non-Prod
     * Execute smoke tests and/or e2e test suite and notify/rollback/fail if tests fail
+    * (Optional) Execute security scans (DAST) and notify/rollback/fail if scans fail
     * (Optional) Post results to internal chat/email system
 * Deploy Prod (if Continuously Deployed)
     * Update prod infrastructure to run the latest code (ideally using blue/green)
@@ -87,18 +89,36 @@ When deploying code that backs a web app and/or API, the actual version informat
     * Execute smoke tests and/or e2e test suite and notify/rollback/fail if tests fail
     * (Optional) Post results to internal chat/email system
 
-# Infrastructure
-On PR:
-* Checkout Code (branch)
-* Lint Changes
-* Plan Changes
-* Lint PR
-    * Title matches conventional commit syntax
-    * Description contains required items
-* Ready to Merge
-    * Depends on all other jobs, and cannot merge unless this passes
+### On CRON
+* E2E/Smoke Tests
+* Security Scan (DAST)
 
-On Merge To Main:
+# Infrastructure
+
+
+### On PR:
+* Checkout Code (branch)
+    * Checkout branch under PR
+* Lint Changes
+    * Lint changes and fail when linter fails
+    * (Optional) Update PR with lint results
+* Plan Changes
+    * Run a plan for all environments based on the changes
+    * (Optional) Update PR with plan results
+* Scan Changes (Optional)
+    * (Optional) Run a security scan on the changes
+    * (Optional) Run a cost analysis scan on the changes
+    * (Optional) Run an allowed configuration scan on the changes
+    * (Optional) Update PR with scan results
+* Lint PR
+    * Lint PR Title and fail if it does not match conventional commit syntax
+    * (Optional) Evaluate the PR Description and fail if it does not contain required items
+    * (Optional) Update PR with results
+* Ready to Merge
+    * Only passes if all other jobs pass. This is used to simplify branch protection so there is a single job required to pass before a PR is merged
+    * (Optional) Post results to internal chat/email system
+
+### On Merge To Main:
 * Checkout Code (main)
 * Plan Change
 * Hold Non-Prod (Optional)
@@ -106,6 +126,10 @@ On Merge To Main:
 * Hold Prod (Recommended)
 * Apply Prod
 
+### On CRON
+* Diff Scan
+* Security Scan
+* 
 
 # Library or Long-Lived Releases
 Use https://semver.org/

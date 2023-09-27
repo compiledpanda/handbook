@@ -93,6 +93,7 @@ The following workflows provide a basic CI/CD system for Web Apps and APIs.
 ### On CRON
 * E2E/Smoke Tests
 * Security Scan (DAST)
+* Dependency Scan
 
 # Infrastructure
 

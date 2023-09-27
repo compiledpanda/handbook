@@ -99,7 +99,10 @@ The following workflows provide a basic CI/CD system for Web Apps and APIs.
     * (Optional) Execute a code dependency scan and notify/submit PR for outdated/insecure dependencies
 
 # Infrastructure
+The typical development flow for infrastructure as code changes is to create short-lived feature branches, create and validate new functionality, and then deploy those changes out to production. Because the purpose is to keep infrastructure changes up to date with the main branch, there is no need for versioning information (especially since infrastructure changes can happen outside of infrastructure as code changes). Note that this section uses terraform-like semantics and nomenclature, but the workflow steps can also apply to other forms of managing infrastructure as code.
 
+## Workflows
+The following workflows provide a basic CI/CD system for Web Apps and APIs.
 
 ### On PR:
 ![Infrastructure On PR](./img/infra-on-pr.png)
@@ -157,7 +160,7 @@ The following workflows provide a basic CI/CD system for Web Apps and APIs.
 Use https://semver.org/
 
 On PR:
-* Checkout Code (branch)
+* Checkout Code
     * Checkout branch under PR
 * Lint Code
     * Lint code and fail when linter fails
@@ -173,7 +176,8 @@ On PR:
     * Depends on all other jobs, and cannot merge unless this passes
 
 On Merge To Main:
-* Checkout Code (main)
+* Checkout Code
+    * Checkout main branch
 * Test Code
 * Auto Release (Optional)
     * Same as `On Manual Release`

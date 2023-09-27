@@ -91,15 +91,19 @@ The following workflows provide a basic CI/CD system for Web Apps and APIs.
     * (Optional) Post results to internal chat/email system
 
 ### On CRON
-* E2E/Smoke Tests
-* Security Scan (DAST)
-* Dependency Scan
+* E2E/Smoke Tests (Optional)
+    * (Optional) Execute smoke tests and/or e2e test suite and notify if tests failure
+* Security Scan (Optional)
+    * (Optional) Execute security scans (DAST/SAST) and notify if scans fail
+* Dependency Scan (Optional)
+    * (Optional) Execute a code dependency scan and notify/submit PR for outdated/insecure dependencies
 
 # Infrastructure
 
 
 ### On PR:
-* Checkout Code (branch)
+![Infrastructure On PR](./img/infra-on-pr.png)
+* Checkout Code
     * Checkout branch under PR
 * Lint Changes
     * Lint changes and fail when linter fails
@@ -121,17 +125,33 @@ The following workflows provide a basic CI/CD system for Web Apps and APIs.
     * (Optional) Post results to internal chat/email system
 
 ### On Merge To Main:
-* Checkout Code (main)
+![Infratructure On Merge](./img/infra-on-merge.png)
+* Checkout Code
+    * Checkout main branch
 * Plan Change
+    * Run a plan for all environments based on the changes (which will catch any infrastructure changes made out of band and show the latest)
 * Hold Non-Prod (Optional)
+    * (Optional) Wait for confirmation before applying non-production changes
 * Apply Non-Prod
+    * Apply all non-production changes
+    * (Optional) Post results to internal chat/email system
 * Hold Prod (Recommended)
+    * Wait for confirmation before applying production changes
 * Apply Prod
+    * Apply all production changes
+    * (Optional) Post results to internal chat/email system
 
 ### On CRON
-* Diff Scan
-* Security Scan
-* 
+* Drift Scan (Optional)
+    * (Optional) Run a plan to detect infrastructure drift or unapplied changes
+* Security Scan (Optional)
+    * (Optional) Run a security scan on the changes
+* Cost Scan (Optional)
+    * (Optional) Run a cost analysis scan on the changes
+* Allowed Config Scan (Optional)
+    * (Optional) Run an allowed configuration scan on the changes
+* Dependency Scan (Optional)
+    * (Optional) Execute a code dependency scan and notify/submit PR for outdated/insecure dependencies
 
 # Library or Long-Lived Releases
 Use https://semver.org/

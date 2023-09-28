@@ -157,7 +157,7 @@ The following workflows provide a basic CI/CD system for Web Apps and APIs.
     * (Optional) Execute a code dependency scan and notify/submit PR for outdated/insecure dependencies
 
 # Library or Long-Lived Releases
-Use https://semver.org/
+For libraries or long lived releases (releases where there is the need to support more than a single line of releases) there is the need to convey compatibility information to consumers. [Semver](https://semver.org/) works well for this purpose, and official "releases" can be tagged with a semantic version.
 
 On PR:
 * Checkout Code

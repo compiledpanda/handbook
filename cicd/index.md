@@ -160,6 +160,7 @@ The following workflows provide a basic CI/CD system for Web Apps and APIs.
 For libraries or long lived releases (releases where there is the need to support more than a single line of releases) there is the need to convey compatibility information to consumers. [Semver](https://semver.org/) works well for this purpose, and official "releases" can be tagged with a semantic version.
 
 ### On PR
+![Library On PR](./img/lib-on-pr.png)
 * Checkout Code
     * Checkout branch under PR
 * Lint Code
@@ -182,6 +183,7 @@ For libraries or long lived releases (releases where there is the need to suppor
     * (Optional) Post results to internal chat/email system
 
 ### On Merge To Main:
+![Library On Merge](./img/lib-on-merge.png)
 * Checkout Code
     * Checkout main branch
 * Auto Release (Optional)
@@ -192,6 +194,7 @@ For libraries or long lived releases (releases where there is the need to suppor
     * Git Tag with version
 
 ### On Manual Release
+![Library On Release](./img/lib-on-release.png)
 * Checkout Code
     * Check out release branch and/or commit
 * Check Branch
@@ -206,6 +209,7 @@ For libraries or long lived releases (releases where there is the need to suppor
     * Git Tag with version
 
 ### On Tag
+![Library On Tag](./img/lib-on-tag.png)
 * Checkout Code
     * Check out tag
 * Build Code
@@ -222,6 +226,7 @@ For libraries or long lived releases (releases where there is the need to suppor
     * (Optional) Run `On Manual Deploy` for Prod
 
 ### On Manual Deploy
+![Library On Deploy](./img/lib-on-deploy.png)
 * Checkout Code
     * Checkout main branch
 * Check Build

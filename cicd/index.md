@@ -228,7 +228,7 @@ For libraries or long lived releases (releases where there is the need to suppor
 ### On Manual Deploy
 ![Library On Deploy](./img/lib-on-deploy.png)
 * Checkout Code
-    * Checkout main branch
+    * Checkout tag
 * Check Build
     * Validate inputs (tag, env)
     * Ensure build was tagged/pushed

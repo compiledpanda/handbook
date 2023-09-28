@@ -90,7 +90,7 @@ The following workflows provide a basic CI/CD system for Web Apps and APIs.
     * (Optional) Execute security scans (DAST) and notify/rollback/fail if scans fail
     * (Optional) Post results to internal chat/email system
 
-### On CRON
+### On CRON (Optional)
 * E2E/Smoke Tests (Optional)
     * (Optional) Execute smoke tests and/or e2e test suite and notify if tests failure
 * Security Scan (Optional)
@@ -144,7 +144,7 @@ The following workflows provide a basic CI/CD system for Web Apps and APIs.
     * Apply all production changes
     * (Optional) Post results to internal chat/email system
 
-### On CRON
+### On CRON (Optional)
 * Drift Scan (Optional)
     * (Optional) Run a plan to detect infrastructure drift or unapplied changes
 * Security Scan (Optional)
@@ -235,3 +235,11 @@ For libraries or long lived releases (releases where there is the need to suppor
     * Execute smoke tests and/or e2e test suite and notify/rollback/fail if tests fail
     * (Optional) Execute security scans (DAST) and notify/rollback/fail if scans fail
     * (Optional) Post results to internal chat/email system
+
+### On CRON (Optional)
+* E2E/Smoke Tests (Optional)
+    * (Optional) Execute smoke tests and/or e2e test suite and notify if tests failure
+* Security Scan (Optional)
+    * (Optional) Execute security scans (DAST/SAST) and notify if scans fail
+* Dependency Scan (Optional)
+    * (Optional) Execute a code dependency scan and notify/submit PR for outdated/insecure dependencies

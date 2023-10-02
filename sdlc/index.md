@@ -7,7 +7,7 @@ Not to be confused with a System Life Cycle.
 # Team Structure
 This SDLC assumes the following team structure
 
-![Product System Team](./img/product-system-team.png)
+<img alt="Team Product System" src="./img/product-system-team.png" height="300px" />
 
 * The company is organized into cross-functional teams
 * Teams are staffed based on the products/systems they own and their scope/charter
@@ -19,5 +19,7 @@ This SDLC assumes the following team structure
 # Overview
 Opportunity/Problem SDLC
 
-TODO image
+<img alt="SDLC" src="./img/overview.png" height="300px" />
+
+
 

@@ -11,6 +11,8 @@ This SDLC assumes the following team structure
 
 <img alt="Team Product System" src="./img/product-system-team.png" height="300px" />
 
+TODO image of team of teams
+
 * The company is organized into cross-functional teams
 * Teams are staffed based on the products/systems they own and their scope/charter
 * Teams directly own internal/external products (or clearly defined product sections/areas)

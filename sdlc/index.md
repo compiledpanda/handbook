@@ -7,11 +7,10 @@ Not to be confused with a System Life Cycle.
 The Software Development Life Cycle (SDLC) is ...
 
 # Team Structure
-This SDLC assumes the following team structure
+This SDLC assumes the following team structure and ownership.
 
-<img alt="Team Product System" src="./img/product-system-team.png" height="300px" />
-
-TODO image of team of teams
+| <img alt="Team Structure" src="./img/team-structure.png" style="max-height:260px" /> | <img alt="Team Product System" src="./img/product-system-team.png" style="max-height:300px" /> |
+| --- | --- |
 
 * The company is organized into cross-functional teams
 * Teams are staffed based on the products/systems they own and their scope/charter

@@ -47,12 +47,13 @@ Processes and controls within the SDLC are mapped to Stage/Type combinations (to
     * Based on the classification additional investigation may be required
         * Market opportunities may need research or review
         * Bug reports may need verification
-        * 
 * Justification
     * Why should this problem be solved
         * Can be obvious and not need to be stated?
 * Decision
     * Go/No Go to start solutioning
+    * Concept of standing decisions
+    * Who decides needs to be articulated
 
 # Solution
 

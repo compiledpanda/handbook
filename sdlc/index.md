@@ -22,7 +22,7 @@ This SDLC assumes the following team structure and ownership.
 # Overview
 Opportunity/Problem Solution (OPS?) SDLC
 
-<img alt="SDLC" src="./img/overview.png" height="300px" />
+<img alt="SDLC" src="./img/overview.png" style="max-height:300px" />
 
 TODO classify Item as analagous to an instance of an opportunity/problem
 

@@ -34,6 +34,26 @@ Processes and controls within the SDLC are mapped to Stage/Type combinations (to
 
 # Identification
 
+* Identification
+    * One liner
+    * Additional detail if needed
+    * Ideally given an identifier
+* Classification
+    * Archetype of the item
+    * Size (roughly) of the item
+    * Team to route item to
+    * Urgency of the item
+* Investigation (Optional)
+    * Based on the classification additional investigation may be required
+        * Market opportunities may need research or review
+        * Bug reports may need verification
+        * 
+* Justification
+    * Why should this problem be solved
+        * Can be obvious and not need to be stated?
+* Decision
+    * Go/No Go to start solutioning
+
 # Solution
 
 ## Decomposition

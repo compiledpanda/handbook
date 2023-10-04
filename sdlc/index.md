@@ -34,6 +34,8 @@ Processes and controls within the SDLC are mapped to Stage/Type combinations (to
 
 # Identification
 
+<img alt="Identification" src="./img/identification.png" style="max-height:300px" />
+
 * Identification
     * One liner
     * Additional detail if needed

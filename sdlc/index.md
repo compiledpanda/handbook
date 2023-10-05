@@ -83,10 +83,13 @@ Also note that a solution does not have to have all of its pieces fully solution
 
 * Doing
 * Done
+    * Working software in use by customers 
 
 ## Composition
 
 # Reflection
+
+* actionable changes and other problems / opportunities
 
 
 # Definitions

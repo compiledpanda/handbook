@@ -32,10 +32,10 @@ There are two additional areas marked as "decomposition" and "composition". As t
 
 Processes and controls within the SDLC are mapped to Stage/Type combinations (todo more here), meaning that a process or control takes effect when a particular type of item hits a certain stage in the SDLC.
 
-### Who, What, When, Where, Why, How
+### What, Why, How, Where, Who, When
 Another way to look the SDLC is to view it through the lense of answering who, what, when, where why, and how.
 
-// TODO Image
+<img alt="SDLC What" src="./img/overview-what.png" style="max-height:300px" />
 
 In essence, each stage of the SDLC seeks to answer these questions prior to implementation, and then to reflect on those questions after implementation is complete.
 

@@ -43,6 +43,9 @@ In essence, each stage of the SDLC seeks to answer these questions prior to impl
 
 <img alt="Identification" src="./img/identification.png" style="max-height:300px" />
 
+Problem Articulation Document/Statement
+Problem Justification (why should we tackle this instead of that)
+
 * Identification
     * One liner
     * Additional detail if needed
@@ -65,6 +68,9 @@ In essence, each stage of the SDLC seeks to answer these questions prior to impl
     * Who decides needs to be articulated
 
 # Solution
+
+Solution Articulation Document/Statement
+Solution Justification (why should we do this instead of that)
 
 * Constraints
 * Requirements

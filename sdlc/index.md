@@ -59,7 +59,16 @@ Processes and controls within the SDLC are mapped to Stage/Type combinations (to
 
 # Solution
 
+* Constraints
+* Requirements
+* Resources
+* Design/Plan
+* Approvals/Sign Off
+
 ## Decomposition
+Rather than try to fully develop a monolothic solution prior to prioritization, it is better to decompose the problem or opportunity into smaller pieces. These smaller pieces can then be run through the SDLC and worked on until the are recomposed into an implemented solution that addresses the original opportunity/problem.
+
+Also note that a solution does not have to have all of its pieces fully solutioned prior to starting work on any one given piece. In fact, it is often better to break down an item roughly, fully solution the first piece or two, and then start implementation on those pieces. The information gained from those pieces can then be used to flesh out the solutions to the subsequent pieces, until a full solution is formed and implemented. In essence, you can move a "high-level" solution into implementation without specifying every component piece of that solution (aka building iteratively). Note that this can come at the cost of not having a full plan at the beginning that can be fully scheduled out.
 
 # Prioritization
 

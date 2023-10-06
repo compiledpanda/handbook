@@ -93,7 +93,11 @@ Also note that a solution does not have to have all of its pieces fully solution
 
 # Prioritization
 
-* 
+* Prioritization
+* Coordination
+    * Includes communication
+    * Inter and Intra team
+* Scheduling
 
 # Implementation
 
@@ -105,7 +109,8 @@ Also note that a solution does not have to have all of its pieces fully solution
 
 # Reflection
 
-* actionable changes and other problems / opportunities
+* Reflection
+    * actionable changes and other problems / opportunities
 
 
 # Definitions

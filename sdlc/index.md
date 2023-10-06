@@ -52,7 +52,9 @@ Problem Justification (why should we tackle this instead of that)
     * Ideally given an identifier
 * Classification
     * Archetype of the item
-    * Size (roughly) of the item
+    * Size (roughly) of the item (Optional)
+    * Product(s) the item affect (Optional)
+    * System(s) the item affects (Optional)
     * Team to route item to
     * Urgency of the item
 * Investigation (Optional)
@@ -72,9 +74,9 @@ Problem Justification (why should we tackle this instead of that)
 Solution Articulation Document/Statement
 Solution Justification (why should we do this instead of that)
 
-* Constraints
-* Requirements
-* Resources
+* Resources/Constraints
+    * Sizing here?
+* Product/System Requirements (Functional/Non-Functional)
 * Design/Plan
 * Approvals/Sign Off
 
@@ -83,12 +85,15 @@ Rather than try to fully develop a monolothic solution prior to prioritization, 
 
 Also note that a solution does not have to have all of its pieces fully solutioned prior to starting work on any one given piece. In fact, it is often better to break down an item roughly, fully solution the first piece or two, and then start implementation on those pieces. The information gained from those pieces can then be used to flesh out the solutions to the subsequent pieces, until a full solution is formed and implemented. In essence, you can move a "high-level" solution into implementation without specifying every component piece of that solution (aka building iteratively). Note that this can come at the cost of not having a full plan at the beginning that can be fully scheduled out.
 
-| | |
-| --- | --- |
 | <img alt="Decomposition Line" src="./img/decomposition-line.png" style="max-height:300px" /> | <img alt="Decomposition Space" src="./img/decomposition-space.png" style="max-height:300px" /> |
+| --- | --- |
+
 | <img alt="Decomposition Items" src="./img/decomposition-items.png" style="max-height:300px" /> | <img alt="Decomposition Breakdown" src="./img/decomposition-breakdown.png" style="max-height:300px" /> |
+| --- | --- |
 
 # Prioritization
+
+* 
 
 # Implementation
 

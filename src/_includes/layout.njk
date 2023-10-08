@@ -9,6 +9,14 @@ title: Handbook
     <title>{{ title }}</title>
   </head>
   <body>
-    {{ content | safe }}
+    <header>
+      <nav></nav>
+    </header>
+    <main>
+      <section>
+        {{ content | safe }}
+      </section>
+      <footer></footer>
+    </main>
   </body>
 </html>

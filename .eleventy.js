@@ -1,5 +1,5 @@
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("**/*.png");
+  eleventyConfig.addPassthroughCopy("{,!(_site)/**/}*.png");
   return {
     dir: {
       data: "_data",

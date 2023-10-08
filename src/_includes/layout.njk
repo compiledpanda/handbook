@@ -9,12 +9,12 @@ title: Handbook
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/index.css"/>
   </head>
-  <body class="bg-black">
+  <body class="w-full">
     <header>
       <nav></nav>
     </header>
-    <main>
-      <section>
+    <main class="flex flex-row justify-center">
+      <section class="prose text-base max-w-prose">
         {{ content | safe }}
       </section>
       <footer></footer>

@@ -4,10 +4,14 @@ status: draft
 # General
 * Always squash merge w/ commit message pulled from the PR title
     * Use https://www.conventionalcommits.org/
-    * `<type>[optional scope][!]: <description>` (i.e. `fix(PROJ-1234)!: breaking fix that ...`
+        ```
+        <type>[optional scope][!]: <description>
+        
+        fix(PROJ-1234)!: breaking fix that ...
+        ```
     * The set of types and scopes should be agreed upon and encoded in the linter
     * Scope should consistently be the ticket number if an external ticketing system is used (i.e. Jira)
-    * Use `!` for breaking changes
+    * Use **!** for breaking changes
     * Body should be additional info that adds context (why) to the change
 * Use a single main branch and protect that branch
     * Require PR to merge
@@ -18,7 +22,7 @@ status: draft
 The typical development flow for a Web App or API is to create short-lived feature branches, create and validate new functionality, and then deploy those changes out to production. Because versioning from a consumer perspective is usually inherent in the app or API itself, there is usually no need to provide strict versioning or long lived versions for these types of projects. As such the focus is on simplicity and speed, with the ability to understand what is deployed where at any given time.
 
 ## Tagging/Versioning, or why not use semver?
-When deploying code that backs a web app and/or API, the deployed version information is for reference or internal use only. There is no information within semver that the party using the web app or api needs to know. The API contract itself handles versioning, and a web app does not gain anything by using semver over a release notes page. And what does a sever minor version bump even mean in a web app? Based on this it typically isn't worth the rigamorole of trying to do wemver, especially if you are continuiously deploying when changes hit master. It just adds complexity to the SDLC process (calculating/setting/tracking/incrementing the version) for the App/API without any major advantages. As such, use either the git has of the commit directly (`a5ad1258...`, either first 7 chars or the entire hash) since it provides the ability to know the exact code deployed by referencing git (the source of truth), or a combination of the git hash and build date (`2023-01-01-a5ad1258...`) to allow DevSecOps to easily see the build date and to also get a reference to the exact code.
+When deploying code that backs a web app and/or API, the deployed version information is for reference or internal use only. There is no information within semver that the party using the web app or api needs to know. The API contract itself handles versioning, and a web app does not gain anything by using semver over a release notes page. And what does a sever minor version bump even mean in a web app? Based on this it typically isn't worth the rigamorole of trying to do wemver, especially if you are continuiously deploying when changes hit master. It just adds complexity to the SDLC process (calculating/setting/tracking/incrementing the version) for the App/API without any major advantages. As such, use either the git has of the commit directly (**a5ad1258...**, either first 7 chars or the entire hash) since it provides the ability to know the exact code deployed by referencing git (the source of truth), or a combination of the git hash and build date (**2023-01-01-a5ad1258...**) to allow DevSecOps to easily see the build date and to also get a reference to the exact code.
 
 ## Workflows
 The following workflows provide a basic CI/CD system for Web Apps and APIs.

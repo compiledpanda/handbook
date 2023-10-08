@@ -5,5 +5,11 @@ build:
   npx @11ty/eleventy
   npx tailwindcss -i ./src/index.css -o ./_site/index.css
 
-serve:
+serve-eleventy:
   npx @11ty/eleventy --serve
+
+serve-tailwind:
+  npx tailwindcss -i ./src/index.css -o ./_site/index.css --watch
+
+serve:
+  npx concurrently "just serve-eleventy" "just serve-tailwind" 

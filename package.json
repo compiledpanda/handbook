@@ -1,0 +1,11 @@
+{
+  "name": "handbook",
+  "version": "0.1.0",
+  "description": "My personal handbook",
+  "main": "index.js",
+  "author": "John Clark<socrates37@gmail.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

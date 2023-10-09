@@ -1,4 +1,5 @@
 ---
+title: CICD
 status: draft
 ---
 # General

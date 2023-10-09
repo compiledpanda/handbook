@@ -10,9 +10,40 @@ title: Handbook
     <link rel="stylesheet" href="/index.css"/>
     <link rel="stylesheet" href="/prism.css"/>
   </head>
-  <body class="w-full">
+  <body class="flex max-md:flex-row md:flex-column w-full h-full">
     <header>
-      <nav></nav>
+      <div id="hamburger" class="md:hidden px-4 py-4">
+        <svg
+          class="h-8 w-8 text-gray-600"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <line x1="6" y1="6" x2="18" y2="6" />
+          <line x1="6" y1="12" x2="18" y2="12" />
+          <line x1="6" y1="18" x2="18" y2="18" />
+        </svg>
+      </div>
+      <div id="nav-bg" class="hidden fixed top-0 left-0 w-full h-full bg-gray-500/75"></div>
+      <nav class="max-md:hidden max-md:fixed max-md:top-0 max-md:left-0 h-full bg-white min-w-[240px]">
+        {% set navPages = collections.all | eleventyNavigation %}
+        {% macro renderNavListItem(entry) -%}
+          <li {% if entry.url == page.url %} class="p-2 bg-sky-300/50 border-b-2 border-b-sky-500" {% else %} class="p-2 border-b-2 border-b-gray-300" {% endif %}>
+            <a href="{{ entry.url }}">{{ entry.title }}</a>
+          {%- if entry.children.length -%}
+            <ul>
+              {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
+            </ul>
+          {%- endif -%}
+          </li>
+        {%- endmacro %}
+        <ul>
+          {%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
+        </ul>
+      </nav>
     </header>
     <main class="flex flex-row justify-center">
       <section class="prose text-base max-w-prose">
@@ -21,4 +52,24 @@ title: Handbook
       <footer></footer>
     </main>
   </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get refs
+      const burger = document.querySelector('#hamburger');
+      const nav = document.querySelector('nav');
+      const background = document.querySelector('#nav-bg');
+
+      // Open menu on nav click
+      burger.addEventListener('click', function() {
+        nav.classList.toggle('max-md:hidden');
+        background.classList.toggle('hidden');
+      });
+
+      // Close menu on background click
+      background.addEventListener('click', function() {
+        nav.classList.toggle('max-md:hidden');
+        background.classList.toggle('hidden');
+      });
+    });
+  </script>
 </html>

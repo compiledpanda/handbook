@@ -1,4 +1,5 @@
 ---
+title: INDEX
 status: draft
 ---
 Hello World!

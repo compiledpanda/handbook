@@ -1,4 +1,5 @@
 const markdownIt = require('markdown-it');
+const eleventyNavigation = require("@11ty/eleventy-navigation");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 // https://github.com/11ty/eleventy-plugin-syntaxhighlight/issues/38
@@ -12,6 +13,7 @@ md.renderer.rules.code_inline = (tokens, idx, { langPrefix = '' }) => {
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary('md', md);
+  eleventyConfig.addPlugin(eleventyNavigation);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPassthroughCopy("{,!(_site)/**/}*.png");
   eleventyConfig.addPassthroughCopy("src/prism.css");

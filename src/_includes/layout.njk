@@ -10,9 +10,9 @@ title: Handbook
     <link rel="stylesheet" href="/index.css"/>
     <link rel="stylesheet" href="/prism.css"/>
   </head>
-  <body class="flex max-md:flex-row md:flex-column w-full h-full">
+  <body class="flex max-md:flex-col md:flex-row w-full h-full">
     <header>
-      <div id="hamburger" class="md:hidden px-4 py-4">
+      <div id="hamburger" class="md:hidden px-4 py-4 cursor-pointer">
         <svg
           class="h-8 w-8 text-gray-600"
           viewBox="0 0 24 24"
@@ -31,8 +31,8 @@ title: Handbook
       <nav class="max-md:hidden max-md:fixed max-md:top-0 max-md:left-0 h-full bg-white min-w-[240px]">
         {% set navPages = collections.all | eleventyNavigation %}
         {% macro renderNavListItem(entry) -%}
-          <li {% if entry.url == page.url %} class="p-2 bg-sky-300/50 border-b-2 border-b-sky-500" {% else %} class="p-2 border-b-2 border-b-gray-300" {% endif %}>
-            <a href="{{ entry.url }}">{{ entry.title }}</a>
+          <li {% if entry.url == page.url %} class="bg-sky-300/50 border-b-2 border-b-sky-500" {% else %} class="border-b-2 border-b-gray-300" {% endif %}>
+            <a class="inline-block w-full h-full p-2 cursor-pointer" href="{{ entry.url }}">{{ entry.title }}</a>
           {%- if entry.children.length -%}
             <ul>
               {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
@@ -45,7 +45,7 @@ title: Handbook
         </ul>
       </nav>
     </header>
-    <main class="flex flex-row justify-center">
+    <main class="flex flex-row justify-center md:pt-4 pr-4 pl-4">
       <section class="prose text-base max-w-prose">
         {{ content | safe }}
       </section>

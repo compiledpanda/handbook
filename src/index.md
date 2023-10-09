@@ -1,5 +1,5 @@
 ---
-title: INDEX
+title: Handbook
 status: draft
 ---
 Hello World!

@@ -21,7 +21,13 @@ This SDLC assumes the following team structure and ownership.
 * Every system is owned by a single team (See "Ownership/Stewardship" document)
 
 # Overview
+
+Opportunity - Possibility of gaining some benefit
+Problem - Loss has occurred 
+Risk - Possibility of some loss
+
 Opportunity/Problem Solution (OPS?) SDLC
+Opportunity/ProblemRisk (OPR?) SDLC
 
 <img alt="SDLC" src="./img/overview.png" style="max-height:300px" />
 

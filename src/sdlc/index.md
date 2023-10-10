@@ -23,7 +23,7 @@ This SDLC assumes the following team structure and ownership.
 # Overview
 
 Opportunity - Possibility of gaining some benefit
-Problem - Loss has occurred 
+Problem - Unwelcome/harmful situation
 Risk - Possibility of some loss
 
 Opportunity/Problem Solution (OPS?) SDLC
@@ -34,6 +34,8 @@ Opportunity/ProblemRisk (OPR?) SDLC
 TODO classify Item as analagous to an instance of an opportunity/problem
 
 There is a single general process used for all items that go through each stage of the SDLC. First, an opportunity or problem is identified and determined to be worth solving. Next a solution is crafted and determined to be ready for implementation. Then the opportunity/problem solution is prioritized against all other opportunity/problem solutions and scheduled. Then the opportunity/problem solution enters implementation and is considered complete when released. Finally, the item and the process it went through is reflected upon. At each of these stages additional opportunities/problems may be identified, and the identified opportunity/problem follows the same process.
+
+The identification determined the solution process, and the solution determined the implementation process.
 
 There are two additional areas marked as "decomposition" and "composition". As the actual size of a given opportunity/problem does not always match the desired size a team or individual would like to work at, opportunities and problems frequenctly undergo decomposition in a tight identify/solve loop. This loop decomposes an opportunity or problem by breaking down a solution into smaller and smaller items until an optimal size of item has been reached. See Decomposition for further information TODO link. Compisition is the opposite, where the items are recomposed into the full solution created to solve the original opportunity/problem identified.
 
@@ -53,33 +55,37 @@ In essence, each stage of the SDLC seeks to answer these questions prior to impl
 Problem Articulation Document/Statement
 Problem Justification (why should we tackle this instead of that)
 
-* Identification
-    * One liner
-    * Additional detail if needed
-    * Ideally given an identifier
-* Classification
-    * Archetype of the item
-    * Size (roughly) of the item (Optional)
-    * Product(s) the item affect (Optional)
-    * System(s) the item affects (Optional)
-    * Team to route item to
-    * Urgency of the item
-* Investigation (Optional)
-    * Based on the classification additional investigation may be required
+
+* Investigation
+    * Understand the item enough to be able to clearly articulate the item
         * Market opportunities may need research or review
         * Bug reports may need verification
+    * Need the following (What the problem/opportunity/risk is)
+        * Description (fully articulated)
+        * Type
+        * Size
+        * Affected Products/Systems/Teams
+        * Urgency/Priority
+    * Deliverable/Artifact is the investigation results (see Need)
 * Justification
-    * Why should this problem be solved
-        * Can be obvious and not need to be stated?
+    * Articulate the reason why we should try and solution this item now
+    * Need (Why the item should be solved by us)
+    * Deliverable/Artifact is the justification
 * Decision
     * Go/No Go to start solutioning
     * Concept of standing decisions
     * Who decides needs to be articulated
+    * Deliverable/Artifact is the recorded decision
 
 # Solution
 
 Solution Articulation Document/Statement
 Solution Justification (why should we do this instead of that)
+
+* How we solve the problem
+* How we get from here to there
+* Approvals/Sign Off
+
 
 * Resources/Constraints
     * Sizing here?

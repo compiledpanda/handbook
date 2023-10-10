@@ -1,4 +1,5 @@
 ---
+title: SDLC
 status: draft
 ---
 # Software Development Life Cycle

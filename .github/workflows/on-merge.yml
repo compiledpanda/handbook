@@ -1,0 +1,44 @@
+name: On Merge
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+defaults:
+  run:
+    shell: bash
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.x'
+      - name: Setup just
+        uses: extractions/setup-just@v1
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Init
+        run: just init
+      - name: Build
+        run: just build
+      - name: Upload
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: ./_site
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v2

@@ -52,11 +52,8 @@ In essence, each stage of the SDLC seeks to answer these questions prior to impl
 
 <img alt="Identification" src="./img/identification.png" style="max-height:300px" />
 
-Problem Articulation Document/Statement
-Problem Justification (why should we tackle this instead of that)
-
-
-* Investigation
+* Articulation (of an item)
+    * Investigate the problem/opportunity/risk enough to fully articulate it
     * Understand the item enough to be able to clearly articulate the item
         * Market opportunities may need research or review
         * Bug reports may need verification
@@ -67,31 +64,40 @@ Problem Justification (why should we tackle this instead of that)
         * Affected Products/Systems/Teams
         * Urgency/Priority
     * Deliverable/Artifact is the investigation results (see Need)
-* Justification
+        * Item Articulation/Classification Document/Statement
+* Justification (of an item)
     * Articulate the reason why we should try and solution this item now
     * Need (Why the item should be solved by us)
     * Deliverable/Artifact is the justification
-* Decision
+        * Iten Justification (why should we tackle this instead of that)
+* Decision (of an item)
     * Go/No Go to start solutioning
     * Concept of standing decisions
     * Who decides needs to be articulated
     * Deliverable/Artifact is the recorded decision
+        * Item Decision
 
 # Solution
 
-Solution Articulation Document/Statement
-Solution Justification (why should we do this instead of that)
+* Preparation (of a plan)
+    * Product/System Requirements (Functional/Non-Functional)
+    * Design/Plan
+    * How we solve the problem
+    * How we get from here to there
+    * How we will know if the item is fully addressed
+    * Resources/Constraints
+        * Sizing here?
+    * Deliverable/Artifact is the plan
+        * Solution Articulation Document/Statement
+        * Solution Justification (why should we do this instead of that)?
+* Dissemination (of a plan)?
+* Evaluation (of a plan)
+    * Review of the plan/design/approach
+        * Does it fully address the item
+        * Does it meet company/team solution requirements
+        * Is it "complete" enough?
+    * Deliverable/Artifact is the Set of approvals
 
-* How we solve the problem
-* How we get from here to there
-* Approvals/Sign Off
-
-
-* Resources/Constraints
-    * Sizing here?
-* Product/System Requirements (Functional/Non-Functional)
-* Design/Plan
-* Approvals/Sign Off
 
 ## Decomposition
 Rather than try to fully develop a monolothic solution prior to prioritization, it is better to decompose the problem or opportunity into smaller pieces. These smaller pieces can then be run through the SDLC and worked on until the are recomposed into an implemented solution that addresses the original opportunity/problem.
@@ -106,13 +112,19 @@ Also note that a solution does not have to have all of its pieces fully solution
 
 # Prioritization
 
-* Prioritization
-* Coordination
-    * Includes communication
-    * Inter and Intra team
-* Scheduling
+* Evaluation (of the timeline?)
+    * Prioritization
+    * Scheduling
+* Communication (of the timeline?)
+    * Coordination
+        * Includes communication
+        * Inter and Intra team
+* Decision
 
 # Implementation
+
+* Execution
+* Completion
 
 * Doing
 * Done

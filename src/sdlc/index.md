@@ -27,7 +27,7 @@ Problem - Unwelcome/harmful situation
 Risk - Possibility of some loss
 
 Opportunity/Problem Solution (OPS?) SDLC
-Opportunity/ProblemRisk (OPR?) SDLC
+Opportunity/Problem/Risk (OPR?) SDLC
 
 <img alt="SDLC" src="./img/overview.png" style="max-height:300px" />
 
@@ -42,7 +42,7 @@ There are two additional areas marked as "decomposition" and "composition". As t
 Processes and controls within the SDLC are mapped to Stage/Type combinations (todo more here), meaning that a process or control takes effect when a particular type of item hits a certain stage in the SDLC.
 
 ### What, Why, How, Where, Who, When
-Another way to look the SDLC is to view it through the lense of answering who, what, when, where why, and how.
+Another way to look the SDLC is to view it through the lense of answering what, why, who, how, and when.
 
 <img alt="SDLC What" src="./img/overview-what.png" style="max-height:300px" />
 
@@ -52,7 +52,12 @@ In essence, each stage of the SDLC seeks to answer these questions prior to impl
 
 <img alt="Identification" src="./img/identification.png" style="max-height:300px" />
 
-* Articulation (of an item)
+* Classification (of an item)
+    * What archetype of problem/opportunity/risk is it
+    * Deliverable/Artifact is the archetype
+        * Item Classification
+* Investigation (of an item)
+    * Requirements driven by Archetype
     * Investigate the problem/opportunity/risk enough to fully articulate it
     * Understand the item enough to be able to clearly articulate the item
         * Market opportunities may need research or review
@@ -64,13 +69,15 @@ In essence, each stage of the SDLC seeks to answer these questions prior to impl
         * Affected Products/Systems/Teams
         * Urgency/Priority
     * Deliverable/Artifact is the investigation results (see Need)
-        * Item Articulation/Classification Document/Statement
+        * Item Articulation Document/Statement
 * Justification (of an item)
+    * Requirements driven by Archetype
     * Articulate the reason why we should try and solution this item now
     * Need (Why the item should be solved by us)
     * Deliverable/Artifact is the justification
-        * Iten Justification (why should we tackle this instead of that)
-* Decision (of an item)
+        * Item Justification (why should we tackle this instead of that)
+* Decision (on the item)
+    * Requirements driven by Archetype
     * Go/No Go to start solutioning
     * Concept of standing decisions
     * Who decides needs to be articulated
@@ -79,7 +86,10 @@ In essence, each stage of the SDLC seeks to answer these questions prior to impl
 
 # Solution
 
-* Preparation (of a plan)
+<img alt="Solution" src="./img/solution.png" style="max-height:300px" />
+
+* Articulation (of a plan)
+    * Requirements driven by Archetype
     * Product/System Requirements (Functional/Non-Functional)
     * Design/Plan
     * How we solve the problem
@@ -90,14 +100,60 @@ In essence, each stage of the SDLC seeks to answer these questions prior to impl
     * Deliverable/Artifact is the plan
         * Solution Articulation Document/Statement
         * Solution Justification (why should we do this instead of that)?
-* Dissemination (of a plan)?
-* Evaluation (of a plan)
+* Decision (on the plan)
+    * Requirements driven by Archetype
     * Review of the plan/design/approach
         * Does it fully address the item
         * Does it meet company/team solution requirements
         * Is it "complete" enough?
-    * Deliverable/Artifact is the Set of approvals
+        * Should we move forward
+    * Deliverable/Artifact is the recorded decision
+        * Plan Decision
 
+# Prioritization
+
+<img alt="Prioritization" src="./img/prioritization.png" style="max-height:300px" />
+
+* Evaluation (of the timeline)
+    * Requirements driven by Archetype
+    * Prioritization
+    * Scheduling
+    * Roadmapping
+    * Sprint Planning
+    * Deliverable/Artifact is the timeline
+* Decision (on the timeline)
+    * Requirements driven by Archetype
+    * Deliverable/Artifact is the recorded decision
+        * Timeline Decision
+
+# Implementation
+
+<img alt="Implementation" src="./img/implementation.png" style="max-height:300px" />
+
+* Execution (of the plan)
+    * Requirements driven by Archetype
+    * Deliverable/Artifact is the completed plan
+        * Plan Output (Working Software, updated docs, etc...)
+* Verification (of the item & plan)
+    * Requirements driven by Archetype
+    * Deliverable/Artifact is the recorded verification
+        * Plan Verification
+ 
+# Reflection
+
+<img alt="Reflection" src="./img/reflection.png" style="max-height:300px" />
+
+* Examination (of the item & plan)
+    * Requirements driven by Archetype
+    * actionable changes and other problems / opportunities
+    * Deliverable/Artifact is Examination Results?
+        * Results?
+* Action (on the item & plan)
+    * Requirements driven by Archetype
+    * Deliverable/Artifact is Action Items
+        * Action Items
+
+# Decomposition / Composition
 
 ## Decomposition
 Rather than try to fully develop a monolothic solution prior to prioritization, it is better to decompose the problem or opportunity into smaller pieces. These smaller pieces can then be run through the SDLC and worked on until the are recomposed into an implemented solution that addresses the original opportunity/problem.
@@ -110,33 +166,15 @@ Also note that a solution does not have to have all of its pieces fully solution
 | <img alt="Decomposition Items" src="./img/decomposition-items.png" style="max-height:300px" /> | <img alt="Decomposition Breakdown" src="./img/decomposition-breakdown.png" style="max-height:300px" /> |
 | --- | --- |
 
-# Prioritization
-
-* Evaluation (of the timeline?)
-    * Prioritization
-    * Scheduling
-* Communication (of the timeline?)
-    * Coordination
-        * Includes communication
-        * Inter and Intra team
-* Decision
-
-# Implementation
-
-* Execution
-* Completion
-
-* Doing
-* Done
-    * Working software in use by customers 
-
 ## Composition
 
-# Reflection
+TODO
 
-* Reflection
-    * actionable changes and other problems / opportunities
+# Archetypes
 
+* What the items are
+* Requirements at each stage of the SDLC
+* Responsibilities at each stage of the SDLC
 
 # Definitions
 * Composition - TODO

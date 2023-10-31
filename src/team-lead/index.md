@@ -48,6 +48,6 @@ In essence, run the SDLC for items impacting the products and systems owned by t
     * Ensure plan(s) are created to address said items
     * Ensure plans to address items are properly prioritized
     * Ensure plans are implemented and verify that they address said items
-    * Ensure items, plans, and implementations are reflected on after completion
+    * Ensure items, plans, and implementations are reflected on after implementation
 
 # Delegation

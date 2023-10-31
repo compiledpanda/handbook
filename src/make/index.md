@@ -3,7 +3,7 @@ title: Make
 status: draft
 ---
 # Make
-Just use make. It's not sexy, or new, or shiny, but it just works. It comes installed everywhere you are going to write software, and is a known quantity. Sooner or later you are going to have commands that you need to run that aren't really in the wheelhouse of the primary language of your repo, and trying to shoehorn them in isn't worth it. Just use make as the entry point to your software.
+Just use make. It's not sexy, or new, or shiny, but it just works. It comes installed everywhere you are going to write software, and is a known quantity. Sooner or later you are going to have commands that you need to run that aren't really in the wheelhouse of the primary language of your repo, and trying to shoehorn them in isn't worth it in the long run. Just use make as the entry point to your software and be done. If you have complicated build, configuration, or other scripts, use make as the entrypoint and delegate the running of the command to another system or script inside (i.e. `make foo` can just run `./scripts/foo.sh`). Also remember that make supports variables.
 
 ## CI/CD
 One of the primary benefits is that your CI/CD process just calls make commands. This helps keep everything clean and tidy, and helps with reproducibility in a local environment.

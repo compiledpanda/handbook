@@ -31,4 +31,6 @@ As you can see from the list above there are several soft and hard dependencies 
 
 You often want to track and set the priority of items at a higher, more meaningful level than managing the priority of tasks like P1 - schema migration, P2 - API Endpoint to write setting, P2 - API endpoint to read setting, etc...
 
+<img alt="Board with Swimlanes" src="./img/swimlanes.png" style="max-height:300px" />
+
 A good way to do this is prioritize features or discrete bodies of work into "swimlanes", and then manage the dependency chains as an explicit priority within the swimlane itself. Then when you walk the board you go feature by feature in priority order, focusing on the releasable items being worked on by the team instead of focusing on the items being worked on by each individual. Note that as you go item by item you should end up with each individual giving the same information they gave before. And then afterwards you can have a general statement of "anything else" to catch items that may not be tracked (such as out of office reminders, personal items, etc..)

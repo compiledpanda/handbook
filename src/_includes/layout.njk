@@ -42,14 +42,17 @@
         </ul>
       </nav>
     </header>
-    <main class="flex flex-row justify-center lg:pt-4 pr-4 pl-4 bg-white">
+    <main class="flex flex-col justify-between max-lg:flex-1 lg:pt-4 pr-4 pl-4 bg-white">
       <section class="prose text-base max-w-prose">
         {%- if status != 'published' -%}
           <h1 class="text-rose-600">DRAFT</h1>
         {%- endif -%}
         {{ content | safe }}
       </section>
-      <footer></footer>
+      <footer class="flex flex-row justify-center w-full prose p-2 bg-white">
+        <span>Copyright 2023 - John M. Clark - </span>
+        <a href="https://github.com/compiledpanda/handbook" class="pl-1">Github Source</a>
+      </footer>
     </main>
   </body>
   <script>

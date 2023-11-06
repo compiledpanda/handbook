@@ -20,14 +20,12 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '20.x'
-      - name: Setup just
-        uses: extractions/setup-just@v1
       - name: Checkout
         uses: actions/checkout@v3
       - name: Init
-        run: just init
+        run: make init
       - name: Build
-        run: just build
+        run: make build
       - name: Upload
         uses: actions/upload-pages-artifact@v2
         with:

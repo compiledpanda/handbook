@@ -20,19 +20,19 @@ This should create your production ready deployable artifact. Make sure this ret
 ### make test
 This should run the default set of tests that you would run prior to merging in any changes you just made to your main branch. Make sure this returns a non-0 status code on test failure.
 
-## make lint
+### make lint
 This should run your linter(s) against all of your source code. You can also run this command on commit to help catch things before you push. Make sure this returns a non-0 status code on test failure.
 
-## make run
+### make run
 This should run and/or start your software with the default settings needed for local development and/or ci testing
 
-## make clean
+### make clean
 This should return your repo to the state in which it would be cloned. It should remove all cache, in-repo dependencies, and other build/temp files.
 
-## make coverage (optional)
+### make coverage (optional)
 Depending on how you configure your tests, you may want a dedicated test coverage command that runs tests and outputs test coverage. Bonus points if it returns a non-0 status code if coverage is below the configured threshold
 
-## make e2e (optional)
+### make e2e (optional)
 For software that has dedicated end to end and/or integration tests, you should have a command to run them. Make sure this returns a non-0 status code on test failure.
 
 ## Sample File

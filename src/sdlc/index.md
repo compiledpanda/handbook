@@ -3,14 +3,16 @@ title: SDLC
 status: draft
 ---
 # Software Development Life Cycle
+Also known as the Software Development Process.
 Not to be confused with a System Life Cycle.
 
-The Software Development Life Cycle (SDLC) is ...
+# Background
 
-# Team Structure
+## Organization Structure
+## Team Structure
 This SDLC assumes the following team structure and ownership.
 
-| <img alt="Team Structure" src="./img/team-structure.png" style="max-height:260px" /> | <img alt="Team Product System" src="./img/product-system-team.png" style="max-height:300px" /> |
+| <img alt="Team Structure" src="./img/team-structure.jpeg" style="max-height:260px" /> | <img alt="Team Product System" src="./img/product-system-team.jpeg" style="max-height:300px" /> |
 | --- | --- |
 
 * The company is organized into cross-functional teams
@@ -19,168 +21,168 @@ This SDLC assumes the following team structure and ownership.
 * Every product (and product section/area) is owned by a single team (See "Ownership/Stewardship")
 * Teams directly own internal/external systems
 * Every system is owned by a single team (See "Ownership/Stewardship" document)
+## Goals and Assumptions
 
 # Overview
+<img alt="SDLC" src="./img/overview.jpeg" style="max-height:300px" />
 
 Opportunity - Possibility of gaining some benefit
 Problem - Unwelcome/harmful situation
 Risk - Possibility of some loss
 
-Opportunity/Problem Solution (OPS?) SDLC
-Opportunity/Problem/Risk (OPR?) SDLC
 
-<img alt="SDLC" src="./img/overview.png" style="max-height:300px" />
-
-TODO classify Item as analagous to an instance of an opportunity/problem
-
-There is a single general process used for all items that go through each stage of the SDLC. First, an opportunity or problem is identified and determined to be worth solving. Next a solution is crafted and determined to be ready for implementation. Then the opportunity/problem solution is prioritized against all other opportunity/problem solutions and scheduled. Then the opportunity/problem solution enters implementation and is considered complete when released. Finally, the item and the process it went through is reflected upon. At each of these stages additional opportunities/problems may be identified, and the identified opportunity/problem follows the same process.
-
-The identification determined the solution process, and the solution determined the implementation process.
-
-There are two additional areas marked as "decomposition" and "composition". As the actual size of a given opportunity/problem does not always match the desired size a team or individual would like to work at, opportunities and problems frequenctly undergo decomposition in a tight identify/solve loop. This loop decomposes an opportunity or problem by breaking down a solution into smaller and smaller items until an optimal size of item has been reached. See Decomposition for further information TODO link. Compisition is the opposite, where the items are recomposed into the full solution created to solve the original opportunity/problem identified.
-
-Processes and controls within the SDLC are mapped to Stage/Type combinations (todo more here), meaning that a process or control takes effect when a particular type of item hits a certain stage in the SDLC.
+TODO Basic overview
+TODO Define item
+TODO Link to Item Classification Types
 
 ### What, Why, How, Where, Who, When
+<img alt="SDLC" src="./img/overview-what.jpeg" style="max-height:300px" />
+
 Another way to look the SDLC is to view it through the lense of answering what, why, who, how, and when.
 
-<img alt="SDLC What" src="./img/overview-what.png" style="max-height:300px" />
+<img alt="SDLC What" src="./img/overview-what.jpeg" style="max-height:300px" />
 
 In essence, each stage of the SDLC seeks to answer these questions prior to implementation, and then to reflect on those questions after implementation is complete.
 
-# Identification
+# Components
+The SDLC is made up of the following components:
 
-<img alt="Identification" src="./img/identification.png" style="max-height:300px" />
 
-* Classification (of an item)
-    * What archetype of problem/opportunity/risk is it
-    * Deliverable/Artifact is the archetype
-        * Item Classification
-* Investigation (of an item)
-    * Requirements driven by Archetype
-    * Investigate the problem/opportunity/risk enough to fully articulate it
-    * Understand the item enough to be able to clearly articulate the item
-        * Market opportunities may need research or review
-        * Bug reports may need verification
-    * Need the following (What the problem/opportunity/risk is)
-        * Description (fully articulated)
-        * Type
-        * Size
-        * Affected Products/Systems/Teams
-        * Urgency/Priority
-    * Deliverable/Artifact is the investigation results (see Need)
-        * Item Articulation Document/Statement
-* Justification (of an item)
-    * Requirements driven by Archetype
-    * Articulate the reason why we should try and solution this item now
-    * Need (Why the item should be solved by us)
-    * Deliverable/Artifact is the justification
-        * Item Justification (why should we tackle this instead of that)
-* Decision (on the item)
-    * Requirements driven by Archetype
-    * Go/No Go to start solutioning
-    * Concept of standing decisions
-    * Who decides needs to be articulated
-    * Deliverable/Artifact is the recorded decision
-        * Item Decision
 
-# Solution
 
-<img alt="Solution" src="./img/solution.png" style="max-height:300px" />
+## Identify
+Identify items that should be addressed.
 
-* Articulation (of a plan)
-    * Requirements driven by Archetype
-    * Product/System Requirements (Functional/Non-Functional)
-    * Design/Plan
-    * How we solve the problem
-    * How we get from here to there
-    * How we will know if the item is fully addressed
-    * Resources/Constraints
-        * Sizing here?
-    * Deliverable/Artifact is the plan
-        * Solution Articulation Document/Statement
-        * Solution Justification (why should we do this instead of that)?
-* Decision (on the plan)
-    * Requirements driven by Archetype
-    * Review of the plan/design/approach
-        * Does it fully address the item
-        * Does it meet company/team solution requirements
-        * Is it "complete" enough?
-        * Should we move forward
-    * Deliverable/Artifact is the recorded decision
-        * Plan Decision
+<img alt="Identify" src="./img/identify.jpeg" style="max-height:300px" />
 
-# Prioritization
+**Related Activities**:
+* Ad hoc
+* &lt;Product&gt; Direction
+* &lt;System&gt; Direction
 
-<img alt="Prioritization" src="./img/prioritization.png" style="max-height:300px" />
+### Classify
 
-* Evaluation (of the timeline)
-    * Requirements driven by Archetype
-    * Prioritization
-    * Scheduling
-    * Roadmapping
-    * Sprint Planning
-    * Deliverable/Artifact is the timeline
-* Decision (on the timeline)
-    * Requirements driven by Archetype
-    * Deliverable/Artifact is the recorded decision
-        * Timeline Decision
+**Purpose**: To classify the item within the SDLC so that type-specific requirements, activities, and artifacts can be tracked.
 
-# Implementation
+**Outcome**: A type has been assigned to the item.
 
-<img alt="Implementation" src="./img/implementation.png" style="max-height:300px" />
+### Describe
 
-* Execution (of the plan)
-    * Requirements driven by Archetype
-    * Deliverable/Artifact is the completed plan
-        * Plan Output (Working Software, updated docs, etc...)
-* Verification (of the item & plan)
-    * Requirements driven by Archetype
-    * Deliverable/Artifact is the recorded verification
-        * Plan Verification
- 
-# Reflection
+**Purpose**: To describe _what_ the item is to a degree sufficient that a justification of why this item should be addressed can be made and that a plan can be created to resolve this item.
 
-<img alt="Reflection" src="./img/reflection.png" style="max-height:300px" />
+**Outcome**: A sufficiently articulated description of _what_ this item is.
 
-* Examination (of the item & plan)
-    * Requirements driven by Archetype
-    * actionable changes and other problems / opportunities
-    * Deliverable/Artifact is Examination Results?
-        * Results?
-* Action (on the item & plan)
-    * Requirements driven by Archetype
-    * Deliverable/Artifact is Action Items
-        * Action Items
+### Justify
 
-# Decomposition / Composition
+**Purpose**: Justify _why_ the item as described should be addressed by the tem and prioritized for planning and implementation.
 
-## Decomposition
-Rather than try to fully develop a monolothic solution prior to prioritization, it is better to decompose the problem or opportunity into smaller pieces. These smaller pieces can then be run through the SDLC and worked on until the are recomposed into an implemented solution that addresses the original opportunity/problem.
+**Outcome**: An explanation of _why_ this item should be addressed.
 
-Also note that a solution does not have to have all of its pieces fully solutioned prior to starting work on any one given piece. In fact, it is often better to break down an item roughly, fully solution the first piece or two, and then start implementation on those pieces. The information gained from those pieces can then be used to flesh out the solutions to the subsequent pieces, until a full solution is formed and implemented. In essence, you can move a "high-level" solution into implementation without specifying every component piece of that solution (aka building iteratively). Note that this can come at the cost of not having a full plan at the beginning that can be fully scheduled out.
+### Decide
 
-| <img alt="Decomposition Line" src="./img/decomposition-line.png" style="max-height:300px" /> | <img alt="Decomposition Space" src="./img/decomposition-space.png" style="max-height:300px" /> |
-| --- | --- |
+**Purpose**: To decide if this item should move forward into the planning phase (after applicable review and approval based on item type)
 
-| <img alt="Decomposition Items" src="./img/decomposition-items.png" style="max-height:300px" /> | <img alt="Decomposition Breakdown" src="./img/decomposition-breakdown.png" style="max-height:300px" /> |
-| --- | --- |
+**Outcome**: A record of the decision to either move this item to planning or to retire/archive/not proceed 
 
-## Composition
 
-TODO
 
-# Archetypes
 
-* What the items are
-* Requirements at each stage of the SDLC
-* Responsibilities at each stage of the SDLC
+## Plan
+Plan how to address items that have been identified.
 
-# Definitions
-* Composition - TODO
-* Control - TODO
-* Decomposition - TODO
-* Item - a generic name for an opportunity or problem
-* Process - TODO
-* Stage - a part of the sdlc
-* Type - A type or classification of an item at a particular stage of the SDLC
+<img alt="Plan" src="./img/plan.jpeg" style="max-height:300px" />
+
+**Related Activities**:
+* &lt;Item&gt; Breakdown (planning)
+
+### Formulate
+
+**Purpose**: To formulate a plan of _how_ to address the item identified earlier.
+
+**Outcome**: A plan that addresses _how_ to address the item identified earlier.
+
+### Collaborate
+
+**Purpose**: To collaborate on the plan with _who_ needs to review/approve/know/etc.
+
+**Outcome**: An understanding by those affected and invested in the item/product(s)/system(s) of what the plan is and its relative priority.
+
+### Prioritize
+
+**Purpose**: To prioritize the item for implementation _when_ it makes sense to do so given all other item priorities.
+
+**Outcome**: A recorded relative priority of this item in relation to other items.
+
+### Decide
+
+**Purpose**: To decide if and when the plan will be implemented, and by whom.
+
+**Outcome**: A record of the decision to either move this item to implementation or to retire/archive/not proceed.
+
+
+
+
+## Execute
+Execute plans to address items. A plan is not executed until it has been implemented, validated, and communicated.
+
+<img alt="Execute" src="./img/execute.jpeg" style="max-height:300px" />
+
+**Related Activities**:
+* &lt;Item&gt; Breakdown (planning)
+
+### Implement
+
+**Purpose**: To implement the plan
+
+**Outcome**: TODO
+
+### Validate
+
+**Purpose**: To validate the implementation of the plan
+
+**Outcome**: TODO
+
+### Communicate
+
+**Purpose**: To communicate the implementation of the plan
+
+**Outcome**: TODO
+
+### Decide
+
+**Purpose**: TODO
+
+**Outcome**: TODO
+
+
+
+
+## Reflect
+Reflect on implemented items.
+
+<img alt="Reflect" src="./img/reflect.jpeg" style="max-height:300px" />
+
+### Review
+
+**Purpose**: TODO
+
+**Outcome**: TODO
+
+### Act
+
+**Purpose**: TODO
+
+**Outcome**: TODO
+
+### Decide
+
+**Purpose**: TODO
+
+**Outcome**: TODO
+
+
+
+
+# Types
+# Processes
+## Intake

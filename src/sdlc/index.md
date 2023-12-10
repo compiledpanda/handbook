@@ -183,6 +183,64 @@ Reflect on implemented items.
 
 
 
-# Types
-# Processes
-## Intake
+# Item Types
+There are multiple ways to classify items within the SDLC, and the types and hierarchy can be tailored to an org as needed.
+
+Item types are important, as processes and requirements within the SDLC can be "hooked" onto the type of item after classification.
+
+<img alt="Item Type Hierarchy" src="./img/hierarchy.jpeg" style="max-height:300px" />
+
+## Item Type Hierarchy
+1. Strategy
+1. Initiative
+1. Milestone/Epic
+1. Task/Bug/Vulnerability
+1. Sub-Task
+
+## Types
+
+### Strategy
+High-level organizational grouping to direct focus and provide direction
+
+### Initiative
+Multiple Teams/Products/systems, or Multiple Epics
+
+### Milestone
+A group of work tracked as a releasable set of items
+
+### Epic
+Single Team/Product/System, Multiple Tasks
+
+### Task
+Item that can be completed in a reasonable amount of time, Basic unit of work
+
+### Bug
+A defect within a system or product
+
+### Vulnerability
+An exploitable defect within a system
+
+### Sub-Task
+Components of a Task
+
+
+
+
+# Activities
+These activities drive the SDLC. Some are best done synchronously, but where possible a bias towards asynchronous work, communication, and documentation is preferred.
+
+The following activites are loosely arranged by SDLC phase
+
+## Identify
+
+### Organizational Strategy
+
+### Product Direction
+
+### System Direction
+
+## Plan
+
+## Execute
+
+## Reflect

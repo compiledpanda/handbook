@@ -16,6 +16,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigation);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPassthroughCopy("{,!(_site)/**/}*.png");
+  eleventyConfig.addPassthroughCopy("{,!(_site)/**/}*.jpeg");
   eleventyConfig.addPassthroughCopy({ "src/_public/prism.css": "prism.css" });
   return {
     dir: {

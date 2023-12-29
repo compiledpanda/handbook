@@ -1,7 +1,5 @@
 # Purpose Driven Development
-Purpose Driven Software Product Development
-
-A handbook describing how to do purpose driven software product development.
+Purpose Driven Software Product Development - A handbook specifying how to do purpose driven software product development.
 
 Question: Is this a handbook or manual?
 
@@ -10,29 +8,22 @@ Question: Is this a handbook or manual?
 ## Foreword
 Describes why this manual exists, and what is in and out of scope.
 
-## Components
+## Background?
+
+## Definitions
 To properly understand the rest of the handbook, you need to understand the following components.
-### Purpose
-### People
-### Product(s)
-### System(s)
-### Team(s)
-The intersection of People, Product, and System. Put it all together
-### What's Next
-(The process)
 
 ## The Process
-### Purpose Driven Development Process
-The overall process
-### Product Development Life Cycle & Processes
-### System Development Life Cycle & Processes
-### People Development Life Cycle & Processes
-### Process Development Life Cycle & Processes
-### Putting it all Together
+A description of the overall process and the life cycles contained therein
 
-## Process Activities and Outcomes
-The set of activities and outcomes
+## Outcomes & Activities
+The set of outcomes and related activities
+
+## Example Activities & Meeting Structure
+An example set of meetings and activities for the org that mesh well with the process and outcomes. Can be used as a starting point.
 
 ## Policies
+An example set of policies that mesh well with the process and outcomes and can be adapted to the organization.
 
 ## Appendix
+Additional items and errata.

@@ -10,7 +10,7 @@ Describes why this manual exists, and what is in and out of scope.
 
 ## Background?
 
-## Purpose
+## Definitions? Purpose?
 To properly understand the rest of the handbook, you need to understand the following components.
 
 ## Life Cycles

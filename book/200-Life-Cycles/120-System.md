@@ -8,39 +8,28 @@ See https://csrc.nist.gov/pubs/sp/800/160/v1/r1/final
 
 TODO: Image of phases & transitions
 
-### Conception
+## Conception
 The need for the system is conceived.
-### Preparation
+## Preparation (TODO need a better name)
 Analysis, Design, and implementation of the initial system, up to the point where it is launched.
-### Launch
+## Launch
 The system is made available to the customer(s) in a "production" setting.
-### Operation
+## Operation
 The continuous Identification, Planning, Implementation, and Review of items affecting the system.
-### Retirement
+## Retirement
 The system is no longer available to customer(s)
-### Disposal
+## Disposal
 The system is decommissioned and all systems, infrastructure, data, etc... is archived and/or removed.
-### Nonexistence
+## Nonexistence
 The system no longer exists
 
-# Stages? (Were processes in old methodology)
+# Stages (Were processes in old methodology)
+## Identify
+Classify, Describe, and Justify items
+## Plan
 
-## Preparation
-### Analysis
-### Design
-### Implementation
-
-
-## Operation
-### Identify
-### Plan
-### Implement
-### Review
-
-## Disposal
-### Archival
-### Removal
-
+## Implement
+## Review
 
 # Prior Art
 

@@ -10,7 +10,7 @@ TODO: Image of phases & transitions
 
 ## Conception
 The need for the system is conceived.
-## Preparation (TODO need a better name)
+## Pre-Launch (TODO need a better name)
 Analysis, Design, and implementation of the initial system, up to the point where it is launched.
 ## Launch
 The system is made available to the customer(s) in a "production" setting.
@@ -23,13 +23,39 @@ The system is decommissioned and all systems, infrastructure, data, etc... is ar
 ## Nonexistence
 The system no longer exists
 
-# Stages (Were processes in old methodology)
+# Stages, Transitions, (Were processes in old methodology) & Steps
+
 ## Identify
-Classify, Describe, and Justify items
+Identify, Classify, and Justify
+### Identify items that impact the system
+### Classify the item
+### Justify the need to address the item
+
+## Identified
+
 ## Plan
+Plan, Collaborate, and Prioritize
+### Plan how to address the item
+### Collaborate with others on the plan
+### Prioritize the timing of the plan
+
+## Planned
 
 ## Implement
+Implement, Verify, and Communicate
+### Implement the plan
+### Verify the plan was implemented correctly (and has no unwanted side effects)
+### Communicate the state of the implementation
+
+## Implemented (AKA Done)
+
 ## Review
+Review, Validate, and Act
+### Review the item, plan, and implementation
+### Validate that the implemented plan resolves the identified item
+### Act on any findings
+
+## Reviewed/Complete
 
 # Prior Art
 

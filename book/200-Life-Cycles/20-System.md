@@ -2,11 +2,11 @@
 
 See https://csrc.nist.gov/pubs/sp/800/160/v1/r1/final
 
-**Note**: Do not differentiate between eveolution, development, maintenance, etc... as they all have the same outcomes. The only differences are inputs to the decision to move an item through to implementation in the operation phase (or to not). All other activities and outcomes remain the same.
+**Note**: Do not differentiate between evolution, development, maintenance, etc... as they all have the same outcomes. The only differences are inputs to the decision to move an item through to implementation in the operation phase (or to not). All other activities and outcomes remain the same.
 
 # Phases & Transitions
 
-TODO: Image of phases & transitions
+<img alt="System Life Cycle Phases and Transitions" src="./_img/system.svg" style="max-height:320px" />
 
 ## Conception
 The need for the system is conceived.
@@ -22,40 +22,6 @@ The system is no longer available to customer(s)
 The system is decommissioned and all systems, infrastructure, data, etc... is archived and/or removed.
 ## Nonexistence
 The system no longer exists
-
-# Stages, Transitions, (Were processes in old methodology) & Steps
-
-## Identify
-Identify, Classify, and Justify
-### Identify items that impact the system
-### Classify the item
-### Justify the need to address the item
-
-## Identified
-
-## Plan
-Plan, Collaborate, and Prioritize
-### Plan how to address the item
-### Collaborate with others on the plan
-### Prioritize the timing of the plan
-
-## Planned
-
-## Implement
-Implement, Verify, and Communicate
-### Implement the plan
-### Verify the plan was implemented correctly (and has no unwanted side effects)
-### Communicate the state of the implementation
-
-## Implemented (AKA Done)
-
-## Review
-Review, Validate, and Act
-### Review the item, plan, and implementation
-### Validate that the implemented plan resolves the identified item
-### Act on any findings
-
-## Reviewed/Complete
 
 # Prior Art
 

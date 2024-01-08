@@ -19,10 +19,12 @@ TODO High Level Description
 
 ### Identify
 Identify items that impact the system.
+TODO mention MVP/MVS
 ### Classify
 Classify the item.
 ### Justify
 Justify the need to address the item.
+TODO mention MVP/MVS
 
 ## Identified
 

@@ -15,6 +15,8 @@ The team that owns this system.
 A firm but reasonably abstract scope statement containing what this system will and will not do. This should be constructed in a way as to allow the owning team to make modifications and operate the system throughout its lifetime without needing additional approvals as long as they stay within scope.
 ### Constraints
 A set of constraints (practical, functional, budget, etc.) that the system must constrain itself to.
+### Data Governance
+The set of data stored and processed by the system, paying special attention to Personally Identifiable Information (PII).
 ### Approvals
 A record of any and all approvals (along with the approval date and any related documentation) needed prior to the system beginning pre-launch work. This set of approvals should be specified at the organizational level and should be consistent. For example, a sign-off and approval of the System Charter from a senior leadership team is a good place to start.
 ### Change Log

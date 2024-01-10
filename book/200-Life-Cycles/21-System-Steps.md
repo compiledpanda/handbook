@@ -58,7 +58,7 @@ TODO mention MVP/MVS
 * See Policy Y section 1.3.b
 * The system must cleanly handle the possible error states that may occur during implementation in a way that is both secure and properly communicates to the user what is occurring.
 
-## Accepted
+## Accept
 
 
 ## Plan
@@ -73,7 +73,7 @@ Collaborate with others on the plan
 ### Prioritize
 Prioritize the timing of the plan
 
-## Scheduled
+## Schedule
 
 ## Implement
 Implement, Verify, and Communicate
@@ -87,7 +87,7 @@ Verify the plan was implemented correctly (and has no unwanted side effects)
 ### Communicate
 Communicate the state of the implementation
 
-## Completed
+## Complete
 
 ## Review
 Review, Validate, and Act

@@ -1,5 +1,7 @@
 # System Operation
-TODO description and notes
+The ongoing operation and development of the system is contained within the Operation Phase, and covers all system development activity up to the retirement transition into the Disposal Phase.
+
+> Note that many SDLCs break this phase up into initial development, maintenance, etc. Those distinctions are useful from an amount and type of work perspective, but the underlying steps, focus', outcomes, and activities are the same for all of them. The only difference is the items that are identified and the input on what gets accepted and scheduled changes based on where it is in the operations phase (shortly after launch, in the middle, or nearing retirement).
 
 # Activities
 Note that the activities here are usually a superset of activities when in pre-launch.
